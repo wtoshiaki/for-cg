@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
 }
+
 .side-bar {
   background-color: #00CC00;
   width: 300px;
@@ -34,7 +35,18 @@
   background-color: #CCFF66;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll
 }
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
 .chat {
   background-color: #FFFFFF;
   width: calc(100vw - 300px);
@@ -44,11 +56,13 @@
   height: 100px;
   padding: 0 40px;
 }
+
 .messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
 }
+
 .form {
   background-color: #DDDDDD;
   height: 90px;
