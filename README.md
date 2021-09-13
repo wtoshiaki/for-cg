@@ -80,7 +80,7 @@ Basic認証　ID:admin パスワード：aaaa
 | third_toilet_id       | integer    | null: false                   |
 | bath_id               | integer    | null: false                   |
 | sleep_check _id       | integer    | null: false                   |
-| state_id              | integer    | null: false                   |
+| state                 | text       | null: false                   |
 | user                  | references | null: false, foreign_key: true|
 
   
@@ -94,7 +94,7 @@ Basic認証　ID:admin パスワード：aaaa
 | Column             | Type       | Options                            |
 | ------------------ | -----------| ---------------------------------- |
 | plan               | string     | null: false                        |
-| date               | string     | null: false                        |
+| date               | text       | null: false                        |
 | user               | references | null: false, foreign_key: true     |
 
 
