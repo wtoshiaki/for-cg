@@ -4,7 +4,6 @@ class RoomsController < ApplicationController
   end
 
   def create
-    binding.pry
     @room = Room.new(room_params)
     if @room.save
       redirect_to root_path
@@ -16,6 +15,6 @@ class RoomsController < ApplicationController
   private
 
   def room_params
-    params.require(:room).permit(:name).merge(user_id: current_user.id)
+    params.require(:room).permit(:name).merge(:name, user_ids: [])
   end
 end
