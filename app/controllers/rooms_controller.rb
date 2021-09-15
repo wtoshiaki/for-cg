@@ -1,6 +1,11 @@
 class RoomsController < ApplicationController
+  
   def new
     @room = Room.new
+  end
+
+  def index
+
   end
 
   def create
@@ -12,9 +17,10 @@ class RoomsController < ApplicationController
     end
   end
 
+
   private
 
   def room_params
-    params.require(:room).permit(:name).merge(:name, user_ids: [])
+    params.require(:room).permit(:name, user_ids: [])
   end
 end
