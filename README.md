@@ -108,11 +108,13 @@ Basic認証　ID:admin パスワード：aaaa
 | plan               | string     | null: false                        |
 | date               | text       | null: false                        |
 | user               | references | null: false, foreign_key: true     |
+| room               | references | null: false, foreign_key: true     |
 
 
   
 ### Association
 - belongs_to :user
+- belongs_to :room
 
 
 ## addresses テーブル
