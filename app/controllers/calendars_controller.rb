@@ -2,39 +2,47 @@ class CalendarsController < ApplicationController
 
   def index
     get_week
-    @plan = Plan.new
+    @calendar = Calendar.new
   end
 
   def create
-    Plan.create(plan_params)
-    redirect_to action: :index
+    
+    Calendar.create(calendar_params)
+  
+    redirect_to room_calendars_path
   end
-
+  
 
   private
 
-  def plan_params
-    params.require(:plan).permit(:date, :plan)
+  def calendar_params
+    params.require(:calendar).permit(:date, :plan).merge(user_id: current_user.id, room_id: params[:room_id])
   end
 
   def get_week
     wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
 
-    @todays_date = Date.today
+    @todays_date = Date.new(2021, 9, 1)
 
     @week_days = []
 
-    plans = Plan.where(date: @todays_date..@todays_date + 10)
+    plans = Calendar.where(date: @todays_date..@todays_date + 364)
 
-    11.times do |x|
+    365.times do |x|
       today_plans = []
-      plans.each do |plan|
-        today_plans.push(plan.plan) if plan.date == @todays_date + x
+      plans.each do |calendar|
+        today_plans.push(calendar.plan) if calendar.date == @todays_date + x
       end
 
       wday_num = Date.today.wday + x
 
-      if wday_num >= 7
+      # if wday_num >= 7
+      #   wday_num = wday_num -7
+      # end
+
+      if wday_num - 7 >= 7
+        wday_num = wday_num % 7
+      else 
         wday_num = wday_num -7
       end
 

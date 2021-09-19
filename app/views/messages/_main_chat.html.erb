@@ -4,6 +4,11 @@
       <%= @room.name %>
     </div>
   </div>
+  <div class="center-header">
+    <div class="header-button">
+      <%= link_to "カレンダー", room_calendars_path(@room) %>
+    </div>
+  </div>
   <div class="right-header">
     <div class="header-button">
       <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
@@ -15,7 +20,7 @@
   <%= render partial: 'message', collection: @messages %>
 </div>
 
-<%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+<%= form_with model: [@room, @message], class: 'input', local: true do |f| %>
   <div class="form-input">
     <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
     <label class="form-image">
