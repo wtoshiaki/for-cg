@@ -34,7 +34,7 @@ RSpec.describe Calendar, type: :model do
       it 'roomが紐付いていないと保存できない' do
         @calendar.room = nil
         @calendar.valid?
-        expect(@calendar.errors.full_messages.to include('Room must exist')
+        expect(@calendar.errors.full_messages).to include('Room must exist')
       end
     end
   end

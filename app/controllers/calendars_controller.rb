@@ -6,7 +6,6 @@ class CalendarsController < ApplicationController
   end
 
   def create
-    
     Calendar.create(calendar_params)
   
     redirect_to room_calendars_path
