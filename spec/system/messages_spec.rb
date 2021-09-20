@@ -40,6 +40,7 @@ RSpec.describe "Messages", type: :system do
 
       # 送信した値がDBに保存されていることを確認する
       expect {
+        binding.pry
         find('input[name="commit"]').click
       }.to change { Message.count }.by(1)
 
