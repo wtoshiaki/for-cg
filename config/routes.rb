@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   resources :rooms, only: [:new, :create, :destroy] do
     resources :calendars, only: [:index, :create]
   end
+  resources :rooms, only: [:new, :create, :destroy] do
+    resources :conditions, only: [:index, :new, :create]
+  end
 end
