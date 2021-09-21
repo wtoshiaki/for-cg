@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_17_025832) do
+ActiveRecord::Schema.define(version: 2021_09_20_125114) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -42,6 +42,30 @@ ActiveRecord::Schema.define(version: 2021_09_17_025832) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["room_id"], name: "index_calendars_on_room_id"
     t.index ["user_id"], name: "index_calendars_on_user_id"
+  end
+
+  create_table "conditions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "confirmer_name", null: false
+    t.string "care_user_name", null: false
+    t.integer "get_up_id", null: false
+    t.integer "breakfast_id", null: false
+    t.integer "first_dentifrice_id", null: false
+    t.integer "first_toilet_id", null: false
+    t.integer "lunch_id", null: false
+    t.integer "second_dentifrice_id", null: false
+    t.integer "second_toilet_id", null: false
+    t.integer "dinner_id", null: false
+    t.integer "third_dentifrice_id", null: false
+    t.integer "third_toilet_id", null: false
+    t.integer "bath_id", null: false
+    t.integer "sleep_check_id", null: false
+    t.text "state", null: false
+    t.bigint "user_id", null: false
+    t.bigint "room_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["room_id"], name: "index_conditions_on_room_id"
+    t.index ["user_id"], name: "index_conditions_on_user_id"
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -85,6 +109,8 @@ ActiveRecord::Schema.define(version: 2021_09_17_025832) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "calendars", "rooms"
   add_foreign_key "calendars", "users"
+  add_foreign_key "conditions", "rooms"
+  add_foreign_key "conditions", "users"
   add_foreign_key "messages", "rooms"
   add_foreign_key "messages", "users"
   add_foreign_key "room_users", "rooms"
