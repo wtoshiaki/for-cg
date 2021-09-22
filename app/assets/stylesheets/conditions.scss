@@ -1,0 +1,109 @@
+// Place all the styles related to the conditions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.post{
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 20px;
+
+}
+
+.index-source{
+  height:200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: lightblue;
+}
+
+.index-about{
+  display: flex;
+  align-items: center;
+}
+
+
+.index-see{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+
+.condition-box {
+  height:800px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px; 
+
+}
+
+.new-source{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  
+}
+
+.title {
+  height: 30px;
+  width: 300px;
+  margin-top: 20px;
+  
+
+}
+
+.new-about{
+  font-size: 20px;
+  margin-bottom: 30px;
+  
+}
+
+.new-see{
+  font-size: 20px;
+  
+}
+
+.text {
+  height: 200px;
+  width: 800px;
+  resize:none;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.select{
+  height: 30px;
+  width: 100px;
+  margin-bottom: 80px;
+}
+
+.btn {
+  width: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: orange;
+  color: white;
+}

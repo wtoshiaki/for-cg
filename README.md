@@ -79,7 +79,8 @@ Basic認証　ID:admin パスワード：aaaa
 
 | Column                | Type       | Options                       |
 | ----------------------| -----------| ------------------------------|
-| given_name            | string     | null: false                   |
+| confirmer_name        | string     | null: false                   |
+| care_user_name        | string     | null: false                   |
 | get_up_id             | integer    | null: false                   |
 | breakfast_id          | integer    | null: fals                    |
 | first_dentifrice_id   | integer    | null: false                   |
@@ -91,9 +92,11 @@ Basic認証　ID:admin パスワード：aaaa
 | third_dentifrice_id   | integer    | null: false                   |
 | third_toilet_id       | integer    | null: false                   |
 | bath_id               | integer    | null: false                   |
-| sleep_check _id       | integer    | null: false                   |
+| sleep_check_id       | integer    | null: false                   |
 | state                 | text       | null: false                   |
 | user                  | references | null: false, foreign_key: true|
+| room               | references | null: false, foreign_key: true     |
+
 
   
 ### Association
