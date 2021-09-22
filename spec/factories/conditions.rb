@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :condition do
-    confirmer_name                     {"田中"}
-    care_user_name                     {"齋藤"}
+    care_user_name                     {"菊池"}
+    confirmer_name                     {"齋藤"}
     get_up_id                          {1}
     breakfast_id                       {1}
     first_dentifrice_id                {1}

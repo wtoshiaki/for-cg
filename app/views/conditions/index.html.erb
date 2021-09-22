@@ -1,4 +1,4 @@
-<h1>記録一覧</h1>
+<h1>利用者記録一覧</h1>
 <%= link_to "記録する", new_room_condition_path, class:"post" %>
 
 <% @conditions.each do |condition| %>
@@ -6,7 +6,7 @@
       <div class = "index-about">
         <div class="index-see">
           利用者名 →
-          <%= condition.care_user_name%>
+          <%= condition.care_user_name %>
         </div>
         <div class="index-see">
           記録者名 →
