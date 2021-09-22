@@ -13,8 +13,8 @@ class Condition < ApplicationRecord
   belongs_to :bath
   belongs_to :sleep_check
 
-  has_many :users
-  has_many :rooms
+  belongs_to :user
+  belongs_to :room
 
   validates :confirmer_name, presence: true
   validates :care_user_name, presence: true
