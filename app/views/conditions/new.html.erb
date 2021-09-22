@@ -1,0 +1,54 @@
+<%= form_with model: @condition, url:room_conditions_path, local: true do |f| %>
+  <div class="condition-box">
+    利用者記録
+   <div class="new-source">
+     <div class ="new-about">
+        <%= f.label :利用者名, class: 'new-see' %>
+        <%= f.text_field :confirmer_name, class:"title" %>
+        <%= f.label :記録者名, class: 'new-see' %>
+        <%= f.text_field :care_user_name, class:"title" %>
+     </div>
+   </div>
+   <div class="new-source">
+     <div class ="new-about">
+        <%= f.label :起床, class: 'new-see' %>
+        <%= f.collection_select(:get_up_id, GetUp.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :朝食, class: 'new-see' %>
+        <%= f.collection_select(:breakfast_id, Breakfast.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :歯磨き, class: 'new-see' %>
+        <%= f.collection_select(:first_dentifrice_id, FirstDentifrice.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :排泄, class: 'new-see' %>
+        <%= f.collection_select(:first_toilet_id, FirstToilet.all, :id, :name, {}, {class:"select"}) %>
+      </div> 
+   </div>
+   <div class="new-source">
+      <div class ="new-about">
+        <%= f.label :昼食, class: 'new-see' %>
+        <%= f.collection_select(:lunch_id, Lunch.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :歯磨き, class: 'new-see' %>
+        <%= f.collection_select(:second_dentifrice_id, SecondDentifrice.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :排泄, class: 'new-see' %>
+        <%= f.collection_select(:second_toilet_id, SecondToilet.all, :id, :name, {}, {class:"select"}) %>
+      </div>
+   </div>
+   <div class="new-source">
+      <div class ="new-about">
+        <%= f.label :夕食, class: 'new-see' %>
+        <%= f.collection_select(:dinner_id, Dinner.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :歯磨き, class: 'new-see' %>
+        <%= f.collection_select(:third_dentifrice_id, ThirdDentifrice.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :排泄, class: 'new-see' %>
+        <%= f.collection_select(:third_toilet_id, ThirdToilet.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :入浴, class: 'new-see' %>
+        <%= f.collection_select(:bath_id, Bath.all, :id, :name, {}, {class:"select"}) %>
+        <%= f.label :就寝確認, class: 'new-see' %>
+        <%= f.collection_select(:sleep_check_id, SleepCheck.all, :id, :name, {}, {class:"select"}) %>
+      </div>
+  </div>
+        <%= f.label :症状, class: 'new-see' %>
+        <%= f.text_area :state, class:"text" %>
+
+        <%= f.submit "登録する" ,class:"btn" %>
+
+  </div>
+<% end %>

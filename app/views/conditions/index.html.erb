@@ -1,0 +1,84 @@
+<h1>記録一覧</h1>
+<%= link_to "記録する", new_room_condition_path, class:"post" %>
+
+<% @conditions.each do |condition| %>
+    <div class ="index-source">
+      <div class = "index-about">
+        <div class="index-see">
+          利用者名 →
+          <%= condition.care_user_name%>
+        </div>
+        <div class="index-see">
+          記録者名 →
+          <%= condition.confirmer_name %>
+        </div>
+        <div class="index-see">
+          投稿日時：<%= condition.created_at %>
+        </div>
+      </div>
+
+      <div class = "index-about">
+        <div class="index-see">
+          起床 →
+           <%= condition.get_up.name %>
+        </div>
+        <div class="index-see">
+          朝食 →
+          <%= condition.breakfast.name %>
+        </div>
+        <div class="index-see">
+          歯磨き →
+          <%= condition.first_dentifrice.name %>
+        </div>
+        <div class="index-see">
+          排泄 →
+           <%= condition.first_toilet.name %>
+        </div>
+      </div>
+
+      <div class = "index-about">
+        <div class="index-see">
+          昼食 →
+          <%= condition.lunch.name %>
+        </div>
+        <div class="index-see">
+          歯磨き →
+          <%= condition.second_dentifrice.name %>
+        </div>
+        <div class="index-see">
+          排泄 →
+          <%= condition.second_toilet.name %>
+        </div>
+      </div>
+        
+      <div class = "index-about">
+        <div class="index-see">
+          夕食 →  
+          <%= condition.dinner.name %>
+        </div>
+        <div class="index-see">
+          歯磨き →
+           <%= condition.third_dentifrice.name %>
+        </div>
+        <div class="index-see">
+          排泄 →
+          <%= condition.third_toilet.name %>
+        </div>
+        <div class="index-see">
+          入浴 →
+          <%= condition.bath.name %>
+        </div>
+        <div class="index-see">
+          就寝確認 →
+          <%= condition.sleep_check.name %>
+        </div>
+      </div>
+      
+      <div class = "index-about">
+       <div class="index-see">
+         症状
+        <%= condition.state %>
+       </div>
+      </div>
+ </div>
+<% end %>
