@@ -1,11 +1,24 @@
+/* .account-page{
+  background-image: url('IMG_0745');
+} */
+
 .account-page .account-page__inner {
   width: 980px;
   margin: 60px auto;
   padding: 60px;
+  background-image: url("SKY.jpg");
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
+
+/* .account-page.account-page__inner clearfix{
+  background-image: url('IMG_0745');
+} */
+
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   float: left;
   width: 50%;
@@ -36,7 +49,7 @@
 .account-page .account-page__header .btn {
   margin-top: 20px;
   color: #fff;
-  background-color: #ccc;
+  background-color: red;
   font-size: 14px;
 }
 .account-page .field {

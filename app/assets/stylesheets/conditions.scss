@@ -2,13 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1{
+
+
+.conditions-title {
   text-align: center;
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 37px;
+  margin-top: 30px;
 }
 
 .post{
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(66, 41, 41, 0.3);
   display: block;
   width: 150px;
   padding: 10px;
@@ -17,10 +21,10 @@ h1{
   color: white;
   text-decoration: none;
   text-align: center;
-  margin: 20px auto;
-  margin-bottom: 20px;
-
+  margin: 30px auto;
+  margin-bottom: 40px;
 }
+
 
 .index-source{
   height:200px;
@@ -28,7 +32,7 @@ h1{
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: lightblue;
 }
 
@@ -41,13 +45,15 @@ h1{
 .index-see{
   font-size: 20px;
   font-weight: bold;
-  margin-right: 60px;
+  margin-right: 70px;
+  display: block;
 }
+
 
 
 .condition-box {
   height:800px;
-  background-color: lightgray;
+  background-color: #E6FFE9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,11 +105,17 @@ h1{
   margin-bottom: 80px;
 }
 
-.btn {
+.register-btn {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   width: 200px;
   margin-top: 20px;
   padding: 10px;
   border: 1px solid white;
   background-color: orange;
   color: white;
+}
+
+.all{
+  background-color: green;
 }

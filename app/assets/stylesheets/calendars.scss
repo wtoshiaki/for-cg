@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-color:#E6FFE9(114, 151, 161);
+  background-color:white;
 }
 
 .calendar-top{
@@ -11,12 +11,13 @@ body {
   align-items: center;
   justify-content: center;
   height: 200px;
-  
+  background-color: green;
+  color: white;
 }
 
 .calendar-header{
   padding: 5px 50px;
-  font-size: 30px;
+  font-size: 40px;
   margin: 15px;
   
 }
@@ -66,7 +67,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-color: #DDDDDD;
+  background-color: green;
   height: 90px;
   padding: 20px 40px;
   
@@ -76,6 +77,7 @@ body {
 .lavel {
   font-size: 3vh;
   color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 
 .text-input {
