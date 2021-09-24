@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: for_cg_production
-  username: for_cg
-  password: <%= ENV['FOR_CG_DATABASE_PASSWORD'] %>
+  username: admin
+  password: 2222
