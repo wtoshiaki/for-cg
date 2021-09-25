@@ -40,9 +40,9 @@ Basic認証　ID:admin パスワード：aaaa
 
 ## rooms テーブル
 
-| Column  | Type       | Options                        |
-| --------|------------|--------------------------------|
-| name    | string     | null: false                    |
+| Column  | Type       | Options     |
+| --------|------------|-------------|
+| name    | string     | null: false |
 
 ### Association
 - has_many :room_users
@@ -92,10 +92,10 @@ Basic認証　ID:admin パスワード：aaaa
 | third_dentifrice_id   | integer    | null: false                   |
 | third_toilet_id       | integer    | null: false                   |
 | bath_id               | integer    | null: false                   |
-| sleep_check_id       | integer    | null: false                   |
+| sleep_check_id        |integer     | null: false                   |
 | state                 | text       | null: false                   |
 | user                  | references | null: false, foreign_key: true|
-| room               | references | null: false, foreign_key: true     |
+| room                  | references | null: false, foreign_key: true|
 
 
   
@@ -120,18 +120,6 @@ Basic認証　ID:admin パスワード：aaaa
 - belongs_to :room
 
 
-## addresses テーブル
-
-| Column             | Type       | Options                        |
-| ------------------ | -------    | -------------------------------|
-| name               | string     | null: false                    |
-| phone_number       | string     | null: false                    |
-| email              | string     | null: false                    |
-| user               | references | null: false, foreign_key: true |
-
-  
-### Association
-- belongs_to :user
 
 # ER図等
 
