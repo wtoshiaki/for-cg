@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: for_cg_production
-  username: for_cg
-  password: <%= ENV['FOR_CG_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
