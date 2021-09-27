@@ -122,6 +122,6 @@ Basic認証　ID:admin パスワード：aaaa
 
 
 # ER図等
-
+![](https://user-images.githubusercontent.com/88226506/134837938-1ffdc459-ebf9-41f0-bf06-757b707c6b5d.jpeg)
 # ローカルでの動作方法
 
