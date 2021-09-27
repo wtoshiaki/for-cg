@@ -7,11 +7,18 @@ margin: 0px;
 }
 
 .side-bar {
-  background-color: #00CC00;
   width: 300px;
   height: 100vh;
-  
 }
+
+.chat {
+  background-color: #FFFFFF;
+  width: calc(100vw - 300px);
+}
+
+
+ /* トップページ左側 */
+
 
 .side-bar-header {
   height: 100px;
@@ -54,10 +61,9 @@ margin: 0px;
   font-size: 23px;
 }
 
-.chat {
-  background-color: #FFFFFF;
-  width: calc(100vw - 300px);
-}
+
+/* トップページ(右側) */
+
 
 .chat-header {
   height: 100px;
@@ -85,7 +91,6 @@ margin: 0px;
 
 .header-button {
   margin-top: 5px;
-  
 }
 
 .header-button-another{

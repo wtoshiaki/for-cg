@@ -1,12 +1,11 @@
+//トップページ右側
+
 body{
   margin: 0px;
-  
-  }
+}
 
 .top {
-  // background-color: #FFFFFF;
-  width: calc(100vw - 300px);
-  
+  width: calc(100vw - 300px); 
 }
 
 a {
@@ -14,52 +13,10 @@ a {
 }
 
 .main {
-  background: white;
   overflow: scroll;
 }
 
-// /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
-// .title-contents {
-//   width: 100p;
-//   background-image: image-url('furima-header01.png');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   justify-content: center;
-//   padding: 5vh 15vw;
-//   color: #fff;
-//   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-// }
 
-// .service-title {
-//   font-size: 8vh;
-// }
-
-// .service-explain {
-//   font-size: 2.5vh;
-//   line-height: 40px;
-// }
-
-// .store-btn {
-//   display: flex;
-//   margin-top: 24px;
-// }
-
-// .apple-btn {
-//   margin-right: 1vw;
-//   height: 9vh;
-// }
-
-// .google-btn {
-//   height: 9vh;
-// }
-
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
-
-/* FURIMAが選ばれる3つの理由部分 */
 .select-reason-contents {
   padding: 5vh 15vw;
   overflow: scroll;
@@ -77,9 +34,7 @@ a {
   text-align: start;
   color: black;
   margin-bottom: 10px;
-  // text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
-  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
-  
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif; 
 }
 
 .introduction-detail{
@@ -92,7 +47,6 @@ a {
   margin-bottom: 20px;
   text-align: center;
   font-size: 25px;
-  
 }
 
 .select-reason-contents>.title {
@@ -165,9 +119,8 @@ a {
 .start{
   font-size: 50px;
   margin-top: 80px;
-  
   color: red;
 }
-/* //FURIMAが選ばれる3つの理由部分 */
+
 
 

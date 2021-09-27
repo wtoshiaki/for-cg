@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//利用者記録(一覧ページ)
+
 
 .conditions-title {
   text-align: center;
@@ -51,6 +53,9 @@
 
 
 
+//利用者記録(記録ページ)
+
+
 .condition-box {
   height:800px;
   background-color: #E6FFE9;
@@ -61,34 +66,28 @@
   font-size: 30px;
   padding-top: 20px;
   padding-bottom: 30px; 
-
 }
 
 .new-source{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
-  
+  font-size: 50px; 
 }
 
 .title {
   height: 30px;
   width: 300px;
   margin-top: 20px;
-  
-
 }
 
 .new-about{
   font-size: 20px;
-  margin-bottom: 30px;
-  
+  margin-bottom: 30px;  
 }
 
 .new-see{
-  font-size: 20px;
-  
+  font-size: 20px;  
 }
 
 .text {
@@ -116,6 +115,3 @@
   color: white;
 }
 
-.all{
-  background-color: green;
-}
