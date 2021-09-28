@@ -13,19 +13,19 @@ email: kaigo1@i   password: kaigo11
 その中で、私の母親と妹が介護関係の仕事をしており、仕事の業務内容を聞いたり、家で実際に作業しているところを見て見ると、業務内容の中にアナログな作業が多くありました。自分が業務内容をより楽に、効率化ができるものを作ることにより、家族はもちろん、社会問題である少子高齢化による介護業界での業務内容向上をとることができると考え、今回のアプリを制作しました。
 # DEMO
 ## トップページ
-
+[![Image from Gyazo](https://i.gyazo.com/bbea7f9648309e44d4416ec977e064e2.jpg)](https://gyazo.com/bbea7f9648309e44d4416ec977e064e2)
 ## 新規登録画面
-
+[![Image from Gyazo](https://i.gyazo.com/96cea3a7402b360da285e2a993cebd63.gif)](https://gyazo.com/96cea3a7402b360da285e2a993cebd63)
 ## ルーム作成機能
-
+[![Image from Gyazo](https://i.gyazo.com/116aaa54adbf3db724368ea5484d56a3.gif)](https://gyazo.com/116aaa54adbf3db724368ea5484d56a3)
 ## メッセージ機能
-
+[![Image from Gyazo](https://i.gyazo.com/f900cee65bfa4076324b34a5ddbb387c.gif)](https://gyazo.com/f900cee65bfa4076324b34a5ddbb387c)
 ## 利用者記録機能
-
+[![Image from Gyazo](https://i.gyazo.com/238c9cd122d2a9c2efbeff590e5dabef.gif)](https://gyazo.com/238c9cd122d2a9c2efbeff590e5dabef)
 ## 計画一覧・登録機能
-
+[![Image from Gyazo](https://i.gyazo.com/2967b6504c36fd1986ca32d6017e9f3b.gif)](https://gyazo.com/2967b6504c36fd1986ca32d6017e9f3b)
 ## ユーザ情報編集機能
-
+[![Image from Gyazo](https://i.gyazo.com/d0309d8327f8237f83bbbc4c9c877006.gif)](https://gyazo.com/d0309d8327f8237f83bbbc4c9c877006)
 
 # 工夫したポイント
 
