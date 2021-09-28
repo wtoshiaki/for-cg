@@ -5,7 +5,7 @@ FOR-CG
 # 本番環境
 ### デプロイ先
  http://35.76.243.118/
-Basic認証
+### Basic認証
 ID:admin     パスワード：aaaa
 ### ログイン情報
 email: kaigo1@i   password: kaigo11
