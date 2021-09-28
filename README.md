@@ -178,8 +178,6 @@ VSCode
 
 
 # ER図等
-![](https://user-images.githubusercontent.com/88226506/134837938-1ffdc459-ebf9-41f0-bf06-757b707c6b5d.jpeg)
-
 [![Image from Gyazo](https://i.gyazo.com/58b1d81c502017c80f308bb34c1d7a45.png)](https://gyazo.com/58b1d81c502017c80f308bb34c1d7a45)
 
 
