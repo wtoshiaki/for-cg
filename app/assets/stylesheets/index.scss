@@ -41,12 +41,14 @@ a {
   font-size: 20px;
   margin-bottom: 20px;
   color: black;
+  font-family: 'Osaka';
 }
 
 .function-list{
   margin-bottom: 20px;
   text-align: center;
   font-size: 25px;
+  color: red;
 }
 
 .select-reason-contents>.title {
@@ -108,19 +110,29 @@ a {
 
 .reason-list-blue-text {
   color: red;
+  font-size: 30px;
 }
 
 .reason-list-description {
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 20px;
   color: white;
+  font-family: 'Osaka';
 }
 
 .start{
-  font-size: 50px;
+  font-size: 42px;
   margin-top: 80px;
-  color: red;
+  color: white;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+  font-weight: 100px;
 }
 
+.start-box{
+  border: 1px solid white;
+  color: white;
+  background-color: #00cc00;
+  padding: 10px;
+}
 
 
