@@ -1,8 +1,10 @@
 h1 {
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
+  font-family: serif;
 }
 
 h2 {
@@ -31,6 +33,7 @@ li {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 .chat-room-form__errors {
@@ -46,6 +49,7 @@ li {
   line-height: 50px;
   font-weight: bold;
   text-align: right;
+  font-family: serif;
 }
 
 .chat-room-form__input {
@@ -54,6 +58,7 @@ li {
   line-height: 30px;
   padding: 10px 15px;
   box-sizing: border-box;
+  font-family: serif;
 }
 
 .chat-room-form__action-btn {
@@ -85,6 +90,7 @@ li {
 .chat-room-form__field--right {
   float: right;
   width: 70%;
+  font-family: serif;
 }
 
 
