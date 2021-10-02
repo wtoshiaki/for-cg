@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "カレンダー保存機能", type: :system do
+RSpec.describe "カレンダー登録機能", type: :system do
   before do
     # 中間テーブルを作成して、usersテーブルとroomsテーブルのレコードを作成する
     @room_user = FactoryBot.create(:room_user)
@@ -12,7 +12,7 @@ RSpec.describe "カレンダー保存機能", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # カレンダーボタンをクリックする
@@ -37,9 +37,6 @@ RSpec.describe "カレンダー保存機能", type: :system do
       # カレンダーの一覧ページに遷移していることを確認する
       expect(current_path).to eq(room_calendars_path(@room_user.room))
 
-      #  # 送信した値がブラウザに表示されていることを確認する
-      #  expect(page).to have_content(date)
-
        # 送信した値がブラウザに表示されていることを確認する
        expect(page).to have_content(plan)
 
@@ -51,7 +48,7 @@ RSpec.describe "カレンダー保存機能", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # カレンダーボタンをクリックする

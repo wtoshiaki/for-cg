@@ -12,7 +12,7 @@ RSpec.describe "Messages", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # DBに保存されていないことを確認する
@@ -31,7 +31,7 @@ RSpec.describe "Messages", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # 値をテキストフォームに入力する
@@ -56,7 +56,7 @@ RSpec.describe "Messages", type: :system do
        # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # 添付する画像を定義する
@@ -82,7 +82,7 @@ RSpec.describe "Messages", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # 添付する画像を定義する

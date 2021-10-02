@@ -10,7 +10,7 @@ RSpec.describe "利用者記録機能", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # 利用者記録ボタンをクリックする
@@ -31,13 +31,13 @@ RSpec.describe "利用者記録機能", type: :system do
       fill_in 'condition_confirmer_name', with: confirmer_name
 
       # 値をフォームに入力する(起床)
-      select '○', from: "condition[get_up_id]"
+      select '⭕', from: "condition[get_up_id]"
 
       # 値をフォームに入力する(朝食)
       select '全量', from: "condition[breakfast_id]"
       
       # 値をフォームに入力する(歯磨き)
-      select '○', from: "condition[first_dentifrice_id]"
+      select '⭕', from: "condition[first_dentifrice_id]"
 
       # 値をフォームに入力する(排泄)
       select '多量', from: "condition[first_toilet_id]"
@@ -46,7 +46,7 @@ RSpec.describe "利用者記録機能", type: :system do
       select '全量', from: "condition[lunch_id]"
 
       # 値をフォームに入力する(歯磨き)
-      select '○', from: "condition[second_dentifrice_id]"
+      select '⭕', from: "condition[second_dentifrice_id]"
 
       # 値をフォームに入力する(排泄)
       select '多量', from: "condition[second_toilet_id]"
@@ -55,7 +55,7 @@ RSpec.describe "利用者記録機能", type: :system do
       select '全量', from: "condition[dinner_id]"
 
       # 値をフォームに入力する(歯磨き)
-      select '○', from: "condition[third_dentifrice_id]"
+      select '⭕', from: "condition[third_dentifrice_id]"
 
       # 値をフォームに入力する(排泄)
       select '多量', from: "condition[third_toilet_id]"
@@ -64,7 +64,7 @@ RSpec.describe "利用者記録機能", type: :system do
       select '清拭', from: "condition[bath_id]"
 
       # 値をフォームに入力する(就寝確認)
-      select '○', from: "condition[sleep_check_id]"
+      select '⭕', from: "condition[sleep_check_id]"
 
       # 値をフォームに入力する(症状)
       state = '問題なし'
@@ -87,13 +87,13 @@ RSpec.describe "利用者記録機能", type: :system do
        expect(page).to have_content(care_user_name)
 
        # 送信した値がブラウザに表示されていることを確認する(起床)
-       expect(page).to have_content('○')
+       expect(page).to have_content('⭕')
 
        # 送信した値がブラウザに表示されていることを確認する(朝食)
        expect(page).to have_content('全量')
 
        # 送信した値がブラウザに表示されていることを確認する(歯磨き)
-       expect(page).to have_content('○')
+       expect(page).to have_content('⭕')
 
        # 送信した値がブラウザに表示されていることを確認する(排泄)
        expect(page).to have_content('多量')
@@ -102,7 +102,7 @@ RSpec.describe "利用者記録機能", type: :system do
        expect(page).to have_content('全量')
 
        # 送信した値がブラウザに表示されていることを確認する(歯磨き)
-       expect(page).to have_content('○')
+       expect(page).to have_content('⭕')
 
        # 送信した値がブラウザに表示されていることを確認する(排泄)
        expect(page).to have_content('多量')
@@ -111,7 +111,7 @@ RSpec.describe "利用者記録機能", type: :system do
        expect(page).to have_content('全量')
 
        # 送信した値がブラウザに表示されていることを確認する(歯磨き)
-       expect(page).to have_content('○')
+       expect(page).to have_content('⭕')
 
        # 送信した値がブラウザに表示されていることを確認する(排泄)
        expect(page).to have_content('多量')
@@ -120,7 +120,7 @@ RSpec.describe "利用者記録機能", type: :system do
        expect(page).to have_content('清拭')
 
        # 送信した値がブラウザに表示されていることを確認する(就寝確認)
-       expect(page).to have_content('○')
+       expect(page).to have_content('⭕')
 
        # 送信した値がブラウザに表示されていることを確認する(症状)
        expect(page).to have_content(state)
@@ -132,7 +132,7 @@ RSpec.describe "利用者記録機能", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたルームへ遷移する
       click_on(@room_user.room.name)
 
       # 利用者記録ボタンをクリックする

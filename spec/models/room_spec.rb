@@ -5,7 +5,7 @@ RSpec.describe Room, type: :model do
     @room = FactoryBot.build(:room)
   end
 
-  describe 'チャットルーム作成' do
+  describe 'ルーム作成' do
     context '新規作成できる場合' do
       it "nameの値が存在すれば作成できる" do
         expect(@room).to be_valid
