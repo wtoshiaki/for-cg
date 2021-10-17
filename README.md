@@ -13,7 +13,7 @@ Eメール: kaigo1@i,  パスワード: kaigo11
 # DEMO
 ## トップページ
 [![Image from Gyazo](https://i.gyazo.com/51a847face0a98de756809fd82802505.gif)](https://gyazo.com/51a847face0a98de756809fd82802505)
-#### ・トップページにはあらじめユーザーが使いやすいよう、アプリの概要を載せた
+#### ・トップページにはあらじめユーザーが使いやすいよう、アプリの概要を掲載
 #### ・各機能の大まかな説明をトップページに表示することで、実際にアプリでできることを把握できるようにした
 ## ユーザー新規登録機能
 [![Image from Gyazo](https://i.gyazo.com/1208c4595030c9f1406ff7df00089ac6.gif)](https://gyazo.com/1208c4595030c9f1406ff7df00089ac6)
